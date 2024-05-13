@@ -1,32 +1,218 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Cash Converter
 
-Welcome,
+This Terminal based Cash Converter lets the user convert currency on the go. With its simple instructions, it lets the user intuitively navigate and use the converter with ease.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
 
-## Reminders
+[Link to live site](insert link here)
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+![Responsive mock-up](insert image here)
 
-## Creating the Heroku app
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+## Index - Table of Contents
 
-1. `heroku/python`
-2. `heroku/nodejs`
+- [Wireframe](#wireframe)
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+- [Design](#design)
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+- [UX](#ux)
+    - [Programm Goals](#programm-goals)
+    - [User Stories](#user-stories)
 
-Connect your GitHub repository and deploy as normal.
+- [Features](#features)
+    - [Existing Features](#existing-features)
+    - [Future Features](#possible-future-features)
 
-## Constraints
+- [Testing](#testing)
+    - [Validator Testing](#validator-testing)
+    - [Browser Testing](#browser-testing)
+    - [Testing User Stories](#testing-user-stories-functionality)
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+- [Debugging](#debugging)
+    - [Fixed bugs](#fixed-bugs)
+    - [Unfixed bugs](#unfixed-bugs)
 
----
+- [Deployment](#deployment)
 
-Happy coding!
+- [Credits](#credits)
+    - [Data](#data)
+    - [Code](#code)
+
+
+## Wireframe
+
+The following wireframe (created with []()) visualizes the planning process for this application.
+
+![](instert image here)
+
+
+## Design
+
+As this is simple terminal based application, the design process for the user interface was limited.
+
+It uses the terminals default design.
+
+
+## UX
+
+### Programm Goals
+
+The goal of this converter is to provide the user with a simple, easy-to-understand application.
+
+### User Stories
+
+**As a user I want to**
+
+- be able to convert currency at any time and any place
+- have an easy-to-understand application 
+- be able to input whichever currency i need
+- be informed if my data input is not valid and why
+- read whats required to utilise the cash converter 
+
+
+**As a site administrator I want to**
+
+- be able to make modifications to the cash converter (see [future features](#possible-future-features))
+- offer the user a simple and cash converter
+
+
+## Features
+
+### Existing Features
+
+**Logo**
+- Displays Cash Converter title using ASCII
+
+![logo](insert image here)
+
+**Introduction and Rules**
+- Gives the user a brief run through the converter and how to utilise
+
+![cash converter intro](insert image here)
+
+
+**Invalid Data Error**
+- Informs the user if input data was not valid
+- Tells the user which data type is required and what was typed incorrectly
+- Displays for invalid currency and letter with input
+
+![invalid letter and currency ](insert image here)
+
+
+**Currency conversion result**
+- Informs user when conversion is done
+
+![currency conversion message]()
+
+
+**Restart cash converter option**
+- Offers user the choice to restart and convert new currency
+
+![restart converter](insert image here)
+
+
+### Possible Future Features
+
+
+
+## Testing
+
+### Validator Testing
+
+- HTML, CSS and JavaScript validation does not apply to this project. The template provided by Code Institute as provided to all students is assumed to be tested for the above.
+No further change or manipulation of the template's default HTML, CSS and JavaScript files has been performed.
+
+- Python Validator [PEP8](http://pep8online.com/)
+
+    - **Error**: 
+
+    - **Solution**: 
+
+    .
+
+    ![PEP8 results](insert jpg of pep8 rsults here)
+
+- Performance, Accessibility, SEO, Best Practices (Lighthouse Chrome DevTools)
+
+    ![Lighthouse results]()
+
+    Insert lighthouse testing desricptions here. 
+
+### Browser Testing
+
+Ensuring all parts of the program function as expected in all major browsers.
+
+| Browser     | Layout      | Functionality |
+| :---------: | :----------:| :-----------: |
+| Chrome      |           |              |
+| Edge        |           |              |
+| Firefox     |           |              |
+| Safari      |           |              |
+| IE          |deprecated by Microsoft, not tested|
+
+
+### Testing User Stories (Functionality)
+
+| Expectation (As a user, I want to...)  | Result (As a user, I...)    |
+| :---------------------------------: | :------------------------------:|
+
+
+## Debugging
+
+### Fixed Bugs
+
+
+
+
+
+
+*Solution*:
+
+
+
+
+### Unfixed Bugs
+
+.
+
+## Deployment
+
+This project was deployed with Heroku using Code Institute's mock terminal as provided with the Python Essentials template.
+
+To deploy:
+
+- Clone or fork this public repository
+- Create a Heroku account (if not already existing)
+- Create a new app with Heroku
+- In **Settings**, add 2 buildpacks:
+    - ```Python```
+    - ```NodeJS```
+    
+    Ensure the buildpacks are created in that order!
+
+- Allowing Heroku access to GitHub, link the new app to the relevant repository
+- Choose whether or not to enable **Automatic Deploys**. If enabled, the deployed app will update automatically with each push to GitHub
+- Click **Deploy**
+
+## Credits
+- This project was built with Python3 as the "Python's Essentials" Project (portfolio project 3) for Code Insitute. 
+### Data
+
+- **Logo**:
+
+    [Text to ASCII Art Generator](https://patorjk.com/software/taag/#p=display&h=1&v=1&f=Big&t=Cash%20Converter)
+
+    Font: Big.
+
+
+### Code
+
+- **Template and Terminal**
+
+    [Python Essentials Template](https://github.com/Code-Institute-Org/python-essentials-template) provided by Code Institute 
+
+- **Cash Converter**
+
+    [Tutorial by ]()
+
+   
+
