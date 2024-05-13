@@ -1,6 +1,6 @@
 # Cash Converter
 
-This Terminal based Cash Converter lets the user convert currency on the go. With its simple instructions, it lets the user intuitively navigate and use the converter with ease.
+This Terminal based Cash Converter lets the user convert currency with up-to-date exchange rates. With its simple instructions, it lets the user intuitively navigate and use the converter with ease! 
 
 
 [Link to live site](insert link here)
