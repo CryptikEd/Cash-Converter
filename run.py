@@ -66,20 +66,27 @@ def my_cash_converter():
         
 
          except ValueError:
+
              # Handle invalid input for the amount
              print("Invalid input: The amount must be a valid number.")
          except Exception as e:
              # Handle other exceptions such as network errors
              print(f"An error occurred: {e}")
         
-        # add so user must input a yes or no.
+          
 
-        # Prompt the user if they want to perform another conversion
-         choice = input("Do you want to perform another conversion? (yes/no): ").lower()
-
-         # If the user's choice is not 'yes', break out of the loop to end the program
+          # Prompt the user if they want to perform another conversion
+         while True:
+             choice = input("Do you want to perform another conversion? (yes/no): ").lower()
+             
+             if choice == 'yes' or choice == 'no':
+                break
+             else:
+                print("Invalid input: Please enter 'yes' or 'no'.")
+                
+                # If the user's choice is not 'yes', break out of the loop to end the program
          if choice != 'yes':
-             break
+              break
 
 # Call the function to start the currency converter
 my_cash_converter()
