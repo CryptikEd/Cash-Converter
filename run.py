@@ -1,14 +1,32 @@
+logo = """  
+   _____             _        _____                                _              
+  / ____|           | |      / ____|                              | |             
+ | |      __ _  ___ | |__   | |      ___   _ __ __   __ ___  _ __ | |_  ___  _ __ 
+ | |     / _` |/ __|| '_ \  | |     / _ \ | '_ \\ \ / // _ \| '__|| __|/ _ \| '__|
+ | |____| (_| |\__ \| | | | | |____| (_) || | | |\ V /|  __/| |   | |_|  __/| |   
+  \_____|\__,_||___/|_| |_|  \_____|\___/ |_| |_| \_/  \___||_|    \__|\___||_|   
+
+
+
+"""                                                                                
+print(logo)
+
+# too big logo, resolve when seen how to manipulate ascii art.
+
 import requests
+ 
+
 
 def my_cash_converter():
     while True:
-        # find logo and input
+        
      
          #Welcome message and instructions for the user
          print("Welcome to the currency converter made by CryptikEd.")
          print("This converter can convert all of the world's currencies.")
          print("Please enter the following information under.")
          
+
          # Prompt user to input the amount and currencies
          while True:
              amount_str = input("Enter the amount to convert: ")
