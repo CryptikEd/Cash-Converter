@@ -1,6 +1,6 @@
 import requests
 
-def my_currency_converter():
+def my_cash_converter():
     while True:
         # find logo and input
      
@@ -54,6 +54,8 @@ def my_currency_converter():
              # Handle other exceptions such as network errors
              print(f"An error occurred: {e}")
         
+        
+
         # Prompt the user if they want to perform another conversion
          choice = input("Do you want to perform another conversion? (yes/no): ").lower()
 
@@ -62,4 +64,4 @@ def my_currency_converter():
              break
 
 # Call the function to start the currency converter
-my_currency_converter()
+my_cash_converter()
