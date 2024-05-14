@@ -54,7 +54,7 @@ def my_cash_converter():
              # Handle other exceptions such as network errors
              print(f"An error occurred: {e}")
         
-        
+        # add so user must input a yes or no.
 
         # Prompt the user if they want to perform another conversion
          choice = input("Do you want to perform another conversion? (yes/no): ").lower()
