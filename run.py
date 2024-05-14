@@ -8,9 +8,16 @@ def my_currency_converter():
          print("Welcome to the currency converter made by CryptikEd.")
          print("This converter can convert all of the world's currencies.")
          print("Please enter the following information under.")
-
+         
          # Prompt user to input the amount and currencies
-         amount_str = input("Enter the amount to convert: ")
+         while True:
+             amount_str = input("Enter the amount to convert: ")
+             if amount_str.isdigit():
+                 break
+
+             else:
+                print("Invalid input: Please enter a valid number.")
+         
          from_currency = input("Enter the currency to convert from (e.g., USD, EUR, GBP): ").upper()
          to_currency = input("Enter the currency to convert to (e.g., USD, EUR, GBP): ").upper()
 
