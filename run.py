@@ -12,6 +12,7 @@ def my_currency_converter():
          # Prompt user to input the amount and currencies
          while True:
              amount_str = input("Enter the amount to convert: ")
+             # Check if the input string contains only digits
              if amount_str.isdigit():
                  break
 
@@ -53,7 +54,10 @@ def my_currency_converter():
              # Handle other exceptions such as network errors
              print(f"An error occurred: {e}")
         
+        # Prompt the user if they want to perform another conversion
          choice = input("Do you want to perform another conversion? (yes/no): ").lower()
+
+         # If the user's choice is not 'yes', break out of the loop to end the program
          if choice != 'yes':
              break
 
