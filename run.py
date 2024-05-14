@@ -11,8 +11,7 @@ def my_currency_converter():
     to_currency = input("Enter the currency to convert to (e.g., USD, EUR, GBP): ").upper()
 
     try:
-        # amount = float(amount_str) leave until tuesday to work out conversion rate*amount code that will be implemented to give user the amount he inserted in other currency.
-        
+        amount = int (amount_str)
         api_key = "668f299de2059972cf666f65"
         endpoint = f"https://v6.exchangerate-api.com/v6/{api_key}/pair/{from_currency}/{to_currency}"
 
@@ -24,10 +23,12 @@ def my_currency_converter():
         if 'error' in data:
             print(f"Conversion from {from_currency} to {to_currency} is not supported.")
         else:
-            # Performs the conversion but doesnt give the amount user inputs. To be checked.
-            #converted_amount = data['result'] leave until resolved.
-            #print(f"{amount} {from_currency} is equal to {converted_amount:.2f} {to_currency}")
-            print(data)
+
+            conversion_rate = data['conversion_rate']
+            # Performs the conversion and gives the user the amount he inputs.
+            converted_amount = amount * conversion_rate 
+            print((f"{amount} {from_currency} is equal to {converted_amount:.2f} {to_currency}"))
+    
 
     except ValueError:
         print("Invalid input: The amount must be a valid number.")
@@ -36,5 +37,3 @@ def my_currency_converter():
 
 # Call the function to start the currency converter
 my_currency_converter()
-
-# Ap
