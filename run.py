@@ -52,17 +52,19 @@ def my_cash_converter():
             # Check if the conversion is possible.
             if "error" in data:
                 print(
-                    f"Conversion from {from_currency} to {to_currency} is not supported."
+                    f"Conversion from {from_currency} to {to_currency} " 
+                    f"is not supported."
                 )
             else:
                 # Extract conversion rate from the response.
                 conversion_rate = data["conversion_rate"]
 
-                # Performs the conversion and gives the user the amount he inputs.
+                # Performs conversion and gives the user the amount he inputs.
                 converted_amount = amount * conversion_rate
                 print(
                     (
-                        f"{amount} {from_currency} is equal to {converted_amount:.2f} {to_currency}"
+                        f"{amount} {from_currency} is equal to "
+                        f"{converted_amount:.2f} {to_currency}"
                     )
                 )
 
