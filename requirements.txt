@@ -1,2 +1,2 @@
 # Requests library is used to make HTTP requests in Python.
-requests==2.26.0
+requests==3.31.0
