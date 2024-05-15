@@ -85,7 +85,7 @@ def my_cash_converter():
             else:
                 print("Invalid input: Please enter 'yes' or 'no'.")
 
-        # If the user choice is not yes, break out of the loop to end the program.
+        # If the user choice is not yes, ends the program.
         if choice != "yes":
             break
 
