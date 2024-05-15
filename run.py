@@ -19,7 +19,7 @@ def my_cash_converter():
         print("Please enter the following information under.")
         # Prompt user to input the amount and currencies.
         while True:
-            amount_str = input("Enter the amount to convert: ")
+            amount_str = input("Enter the amount to convert:\n")
             # Check if the input string contains only digits.
             if amount_str.isdigit():
                 break
@@ -28,10 +28,10 @@ def my_cash_converter():
                 print("Invalid input: Please enter a valid number.")
 
             from_currency = input(
-                "Enter the currency to convert from (e.g., USD, EUR, GBP): "
+                "Enter the currency to convert from (e.g., USD, EUR, GBP):\n"
             ).upper()
             to_currency = input(
-                "Enter the currency to convert to (e.g., USD, EUR, GBP): "
+                "Enter the currency to convert to (e.g., USD, EUR, GBP):\n"
             ).upper()
 
         try:
@@ -72,7 +72,7 @@ def my_cash_converter():
         # Prompt the user if they want to perform another conversion.
         while True:
             choice = input(
-                "Do you want to perform another conversion? (yes/no): "
+                "Do you want to perform another conversion? (yes/no):\n"
             ).lower()
 
             if choice == "yes" or choice == "no":
