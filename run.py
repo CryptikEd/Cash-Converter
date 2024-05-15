@@ -15,7 +15,8 @@ def my_cash_converter():
     while True:
         # Welcome message and instructions for the user.
         print("Welcome to the currency converter made by CryptikEd.")
-        print("This converter can convert all of the world's currencies.")
+        print("This converter can convert most of the world's currencies.")
+        print("KPW('North korea won') is not supported.")
         print("Please enter the following information under.")
         # Prompt user to input the amount and currencies.
         while True:
