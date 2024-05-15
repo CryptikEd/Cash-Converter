@@ -10,14 +10,14 @@ logo = r"""
 """
 print(logo)
 
+# Welcome message and instructions for the user.
+print("Welcome to the currency converter made by CryptikEd.")
+print("This converter can convert all of the world's currencies.")
+print("Please enter the following information under.")
+
 
 def my_cash_converter():
     while True:
-        # Welcome message and instructions for the user.
-        print("Welcome to the currency converter made by CryptikEd.")
-        print("This converter can convert all of the world's currencies.")
-        print("Please enter the following information under.")
-
         # Prompt user to input the amount and currencies.
         while True:
             amount_str = input("Enter the amount to convert: ")
@@ -52,7 +52,7 @@ def my_cash_converter():
             # Check if the conversion is possible.
             if "error" in data:
                 print(
-                    f"Conversion from {from_currency} to {to_currency} " 
+                    f"Conversion from {from_currency} to {to_currency} "
                     f"is not supported."
                 )
             else:
