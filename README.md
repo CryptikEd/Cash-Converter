@@ -10,26 +10,20 @@ This Terminal based Cash Converter lets the user convert currency with up-to-dat
 
 ## Contents
 
-- [Planning](#Flowchart)
+- [Planning](#flowchart)
 
 - [Design](#design)
 
 - [UX](#ux)
-    - [Programm Goals](#programm-goals)
+    - [Program Goals](#program-goals)
     - [User Stories](#user-stories)
 
 - [Features](#features)
     - [Existing Features](#existing-features)
-    - [Future Features](#possible-future-features)
+    - [Future Features](#future-features)
 
 - [Testing](#testing)
-    - [Validator Testing](#validator-testing)
-    - [Browser Testing](#browser-testing)
-    - [Testing User Stories](#testing-user-stories-functionality)
-
-- [Debugging](#debugging)
-    - [Fixed bugs](#fixed-bugs)
-    - [Unfixed bugs](#unfixed-bugs)
+    - [Validation](#validation)
 
 - [Deployment](#deployment)
 
@@ -54,7 +48,7 @@ It uses the terminals default design.The only applied feature was the logo as i 
 
 ## UX
 
-### Programm Goals
+### Program Goals
 
 The goal of this converter is to provide the user with a simple, easy-to-understand application.
 
@@ -62,121 +56,90 @@ The goal of this converter is to provide the user with a simple, easy-to-underst
 
 **As a user I want to**
 
-- be able to convert currency at any time and any place
-- have an easy-to-understand application 
-- be able to input whichever currency i need
-- be informed if my data input is not valid and why
-- read whats required to utilise the cash converter
+- Be able to convert currency at any time and any place.
+- Have an easy-to-understand application. 
+- Be able to input whichever currency i need.
+- Be informed if my data input is not valid and why.
+- Read whats required to utilise the cash converter.
 
 
 **As a site administrator I want to**
 
-- be able to make modifications to the cash converter (see [future features](#possible-future-features))
-- offer the user a simple a cash converter
-- utilise the converter myself.
-
+- Be able to make modifications to the cash converter (see [future features](#possible-future-features))
+- Offer the user a simple a cash converter.
+- Utilise the converter myself.
 
 ## Features
+
+## Existing Features
 - Users can enter the amount they want to convert.
 - User can enter the currency code from.
 - User can enter the currency code to.
-- 
-### Existing Features
+- Error message if user inputs wrong value.
+- Allows user to make another conversion without restarting program.
 
 **Logo**
-- Displays Cash Converter title using ASCII
+- Displays Cash Converter title using ASCII.
 
 ![logo](assets/images/logo.jpg)
 
-**Introduction and Rules**
-- Gives the user a brief run through the converter and how to utilise
+**Welcome Message**
+- Greets the user welcome.
 
-![cash converter intro]()
+![Welcome message](assets/images/welcomemessage.JPG)
+
+**Introduction and Rules**
+- Gives the user a instuctions and examples of what to input.
+
+![cash converter instuctions](assets/images/instructions.JPG)
 
 
 **Invalid Data Error**
-- Informs the user if input data was not valid
-- Tells the user which data type is required and what was typed incorrectly
-- Displays for invalid currency and letter with input
+- Tells the user which data type is required.
+- Displays for invalid currency code or when letter is insterted instead of numerical values.
+- Informs the user if input data was not valid.
 
-![invalid letter and currency ](insert image here)
-
+  
+![invalid currency code](assets/images/notsupportedcurrency.JPG)
+  
+![invalid numerical values](assets/images/invalidnumerical.JPG)
 
 **Currency conversion result**
 - Outputs the amount user wants.
 
-![currency conversion message]()
+![currency conversion result](assets/images/convertresult.JPG)
 
 
 **Restart cash converter option**
 - Offers user the choice to restart and convert new currency
 
-![restart converter](insert image here)
+![restart converter](assets/images/perfomagain.JPG)
 
 
-### Possible Future Features
+### Future Features
 
+- Impliment colors to display error messages.
+- User can input amount with decimals
+- Better logo with colors.
+- Error message that specifies which currency code is wrongly entered.
+- Real-time currency conversion that updates every 5 minutes.
+- Dropdown menu so user can select the currency.
+- Mobile application version on the go.
+- Currency exchange rate trend analysis.
+- Profile for user to save conversion history.
 
 
 ## Testing
 
-### Validator Testing
+The portal has been well tested and the results can be viewed [here - TESTING](TESTING.md)
+
+## Validation
 
 - HTML, CSS and JavaScript validation does not apply to this project. The template provided by Code Institute as provided to all students is assumed to be tested for the above.
 No further change or manipulation of the template's default HTML, CSS and JavaScript files has been performed.
 
-- Python Validator [PEP8](http://pep8online.com/)
+- Python Validator [PEP8]([http://pep8online.com/](https://pep8ci.herokuapp.com/#))
 
-    - **Error**: 
-
-    - **Solution**: 
-
-    .
-
-    ![PEP8 results](insert jpg of pep8 rsults here)
-
-- Performance, Accessibility, SEO, Best Practices (Lighthouse Chrome DevTools)
-
-    ![Lighthouse results]()
-
-    Insert lighthouse testing desricptions here. 
-
-### Browser Testing
-
-Ensuring all parts of the program function as expected in all major browsers.
-
-| Browser     | Layout      | Functionality |
-| :---------: | :----------:| :-----------: |
-| Chrome      |           |              |
-| Edge        |           |              |
-| Firefox     |           |              |
-| Safari      |           |              |
-| IE          |deprecated by Microsoft, not tested|
-
-
-### Testing User Stories (Functionality)
-
-| Expectation (As a user, I want to...)  | Result (As a user, I...)    |
-| :---------------------------------: | :------------------------------:|
-
-
-## Debugging
-
-### Fixed Bugs
-
-
-
-
-
-
-*Solution*:
-
-
-
-
-### Unfixed Bugs
-
-.
 
 ## Deployment
 
