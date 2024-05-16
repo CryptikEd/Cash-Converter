@@ -3,14 +3,14 @@
 This Terminal based Cash Converter lets the user convert currency with up-to-date exchange rates. With its simple instructions, it lets the user intuitively navigate and use the converter with ease! 
 
 
-[Link to live site](insert link here)
+[Link to live site](https://cash-converter-5ca8f5523a04.herokuapp.com/))
 
-![Responsive mock-up](insert image here)
+![Responsive mock-up](assets/images/amiresponsive.JPG)
 
 
-## Index - Table of Contents
+## Contents
 
-- [Wireframe](#wireframe)
+- [Planning](#Flowchart)
 
 - [Design](#design)
 
@@ -38,18 +38,18 @@ This Terminal based Cash Converter lets the user convert currency with up-to-dat
     - [Code](#code)
 
 
-## Wireframe
+## Flowchart
 
-The following wireframe (created with []()) visualizes the planning process for this application.
+The following wireframe (created with [drawio](https://www.drawio.com/)) visualizes the planning process for this application.
 
-![](instert image here)
+![Flowchart](assets/images/Flowchart.JPG)
 
 
 ## Design
 
 As this is simple terminal based application, the design process for the user interface was limited.
 
-It uses the terminals default design.
+It uses the terminals default design.The only applied feature was the logo as i wanted it to be displayed.
 
 
 ## UX
@@ -66,28 +66,32 @@ The goal of this converter is to provide the user with a simple, easy-to-underst
 - have an easy-to-understand application 
 - be able to input whichever currency i need
 - be informed if my data input is not valid and why
-- read whats required to utilise the cash converter 
+- read whats required to utilise the cash converter
 
 
 **As a site administrator I want to**
 
 - be able to make modifications to the cash converter (see [future features](#possible-future-features))
-- offer the user a simple and cash converter
+- offer the user a simple a cash converter
+- utilise the converter myself.
 
 
 ## Features
-
+- Users can enter the amount they want to convert.
+- User can enter the currency code from.
+- User can enter the currency code to.
+- 
 ### Existing Features
 
 **Logo**
 - Displays Cash Converter title using ASCII
 
-![logo](insert image here)
+![logo](assets/images/logo.jpg)
 
 **Introduction and Rules**
 - Gives the user a brief run through the converter and how to utilise
 
-![cash converter intro](insert image here)
+![cash converter intro]()
 
 
 **Invalid Data Error**
@@ -99,7 +103,7 @@ The goal of this converter is to provide the user with a simple, easy-to-underst
 
 
 **Currency conversion result**
-- Informs user when conversion is done
+- Outputs the amount user wants.
 
 ![currency conversion message]()
 
