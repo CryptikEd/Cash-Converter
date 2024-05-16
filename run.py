@@ -57,7 +57,7 @@ def my_cash_converter():
                 print(
                     f"Conversion from {from_currency} to {to_currency} "
                     f"is not supported."
-                )# Check if conversion rate is available
+                )  # Check if conversion rate is available
             elif "conversion_rate" in data:
                 # Extract conversion rate from the response.
                 conversion_rate = data["conversion_rate"]
