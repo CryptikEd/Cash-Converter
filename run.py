@@ -29,7 +29,7 @@ def my_cash_converter():
                 break
 
             else:
-                print("Invalid input: Please enter a valid numerical value.")
+                print("Invalid input: Please enter a valid numerical value.\n")
 
         from_currency = input(
             "Enter the currency to convert from (e.g., USD, EUR, GBP): "
@@ -56,7 +56,7 @@ def my_cash_converter():
             if "result" in data and data["result"] == "error":
                 print(
                     f"Conversion from {from_currency} to {to_currency} "
-                    f"is not supported."
+                    f"is not supported.\n"
                 )  # Check if conversion rate is available
             elif "conversion_rate" in data:
                 # Extract conversion rate from the response.
@@ -82,7 +82,7 @@ def my_cash_converter():
         # Prompt the user if they want to perform another conversion.
         while True:
             choice = input(
-                "Do you want to perform another conversion? (yes/no): "
+                "Do you want to perform another conversion? (yes/no):\n"
             ).lower()
 
             if choice == "yes" or choice == "no":
