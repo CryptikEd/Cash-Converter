@@ -15,7 +15,7 @@ print("Welcome to the currency converter made by CryptikEd.")
 print("This converter can convert most of the world's currencies.")
 print("Please follow the instructions below.")
 print("Use numerical values without decimals (e.g., 100)")
-print("Write the currency using currency code (e.g., USD)")
+print("Write the currency using currency code (e.g., USD)\n")
 
 
 def my_cash_converter():
