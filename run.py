@@ -23,7 +23,7 @@ def my_cash_converter():
         # Prompt user to input the amount and currencies.
         while True:
 
-            amount_str = input("Enter the amount to convert:\n")
+            amount_str = input("Enter the amount to convert (e.g., 100): ")
             # Check if the input string contains only digits.
             if amount_str.isdigit():
                 break
