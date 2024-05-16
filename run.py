@@ -53,12 +53,12 @@ def my_cash_converter():
             data = response.json()
 
             # Check if the conversion is possible.
-            if "error" in data:
+            if "result" in data and data["result"] == "error":
                 print(
                     f"Conversion from {from_currency} to {to_currency} "
                     f"is not supported."
                 )
-            else:
+            elif "conversion_rate" in data:  # Check if conversion rate is available
                 # Extract conversion rate from the response.
                 conversion_rate = data["conversion_rate"]
 
