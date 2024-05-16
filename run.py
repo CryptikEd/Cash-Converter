@@ -67,7 +67,7 @@ def my_cash_converter():
                 print(
                     (
                         f"{amount} {from_currency} is equal to "
-                        f"{converted_amount:.2f} {to_currency}"
+                        f"{converted_amount:.2f} {to_currency}\n"
                     )
                 )
 
@@ -82,16 +82,17 @@ def my_cash_converter():
         # Prompt the user if they want to perform another conversion.
         while True:
             choice = input(
-                "Do you want to perform another conversion? (yes/no):\n"
+                "Do you want to perform another conversion? (yes/no):"
             ).lower()
 
             if choice == "yes" or choice == "no":
                 break
             else:
-                print("Invalid input: Please enter 'yes' or 'no'.")
+                print("Invalid input: Please enter 'yes' or 'no'.\n")
 
         # If the user choice is not yes, ends the program.
         if choice != "yes":
+            print("Thank you for using Cash converter created by CryptikEd")
             break
 
 
