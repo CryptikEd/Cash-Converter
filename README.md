@@ -29,7 +29,7 @@ This Terminal based Cash Converter lets the user convert currency with up-to-dat
 
 - [Credits](#credits)
 
--[Acknowledgements](#acknowledgements)
+- [Acknowledgements](#acknowledgements)
 
 ## Flowchart
 
